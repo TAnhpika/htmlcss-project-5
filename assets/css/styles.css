@@ -171,6 +171,7 @@ p {
 
 .hero__inner {
     display: flex;
+    column-gap: 160px;
 }
 
 .hero__heading {
@@ -217,5 +218,274 @@ p {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71; 
+}
+
+.hero__media {
+    position: relative;
+}
+
+.phone {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #FFF;
+}
+
+.phone::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    right: calc(76px - 12px);
+    width: 144px;
+    height: 36px;
+    border-radius: 0 0 18px 18px;
+    background: #3C2F60;
+}
+
+.phone__inner {
+    padding: 40px 11px;
+}
+
+.card {
+    position: relative;
+    padding: 16px;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    overflow: hidden;
+    color: #fff;
+    line-height: normal;
+}
+
+.card::before {
+    content: url(../icons/card-decor-01.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.card::after {
+    content: url(../icons/card-decor-02.svg);
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+}
+.card__top, 
+.card__body {
+    position: relative;
+    z-index: 1;
+}
+
+.card__top-label {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.card__top-price {
+    margin-top: 2px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.card__top-circle {
+    --circle-width: 40px;
+    --circle-size: 24px;
+    position: relative;
+    width: var(--circle-width);
+    height: var(--circle-size);
+}
+
+.card__top-circle::before,
+.card__top-circle::after {
+    position: absolute;
+    content: '';
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+}
+
+.card__top-circle::before {
+    background: #FE6565;
+    top: 0;
+    left: 0;
+}
+
+.card__top-circle::after {
+    background: #FEEF65;
+    top: 0;
+    right: 0;
+}
+
+.card__body {
+    margin-top: 32px;
+    width: 192px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px 12px;
+}
+
+.card__body-label {
+    color: #FFF;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.card__body-value {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.phone__body {
+    margin-top: 24px;
+}
+
+.phone__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone__heading {
+    color: #31456A;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.phone__list {
+    margin-top: 33px;
+}
+
+.phone__item {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.phone__item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #edf7fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone__item:nth-child(2) .phone__item-icon {
+    background: #fbefef;
+}
+
+.phone__item:nth-child(3) .phone__item-icon {
+    background: #ecf5f4;
+}
+
+.phone__item:nth-child(4) .phone__item-icon {
+    background: #f1effb;
+}
+
+.phone__item-body {
+    flex-grow: 1;
+}
+
+.phone__row.top {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.phone__row.bottom {
+    margin-top: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.phone-decor {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.phone-decor-1 {
+    top: 109px;
+    left: -100px;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.phone-decor-1__num ,
+.phone-decor-1__desc {
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 8px;
+}
+
+.phone-decor-1__num {
+    margin-left: 19px;
+    color: #4AB5E3;
+    font-weight: 400;
+}
+
+.phone-decor-2 {
+    width: 130px;
+    height: 130px;
+    background: #DA6464;
+    border-radius: 50%;
+    justify-content: center;
+    top: 127px;
+    right: -172px;
+    flex-direction: column;
+}
+
+.phone-decor-2__desc,
+.phone-decor-2__num {
+    color: #FFF;
+    text-align: center;
+}
+
+.phone-decor-2__num {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.phone-decor-3 {
+    bottom: 61px;
+    right: -74px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439F90;
+    display: flex;
+    column-gap: 11px;
+}
+
+.phone-decor-3__num {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; 
+}
+
+.phone-decor-3__desc {
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 0.8rem;
+    line-height: 1;
+    opacity: 0.6;
 }
 
