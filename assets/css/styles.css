@@ -848,3 +848,123 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* Comment */
+.comment {
+    margin-top: 160px;
+}
+
+.comment__top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment__body {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+}
+
+.comment__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment__chat-box {
+    position: relative;
+    width: 570px;
+    padding: 42px 28px;
+    background: #fff;
+    border: 1px solid #dfe2e8;
+    border-radius: 8px;
+    filter: drop-shadow(rgb(168, 169, 171) 0px 0px 1px);
+}
+
+.comment__chat-box::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -119px;
+    border-width: 60px 40px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+}
+
+.comment__chat-box:hover {
+    filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
+    border-color: transparent;
+}
+
+.comment__desc {
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+.comment__author {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author__img-wrap {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: #4ab5e3;
+    overflow: hidden;
+}
+
+.comment__item:nth-child(2) .author__img-wrap {
+    background: #439f90;
+}
+
+.author__img {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.author__img-name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.author__img-title {
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;  
+}
+
+.comment__arrows {
+    margin: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.comment__arrow-item {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+}
+
+.comment__arrow-item--active {
+    background: #7264D6;
+    border-color: #7264D6;
+}
