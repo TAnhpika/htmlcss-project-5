@@ -3,10 +3,14 @@
 }
 
 :root {
-    --primary-color: #7264D6;
+    --primary-color: #7264d6;
     --heading-color: #212832;
-    --text-color: #696D76;
+    --text-color: #696d76;
+}
 
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 html {
@@ -23,12 +27,20 @@ a {
     text-decoration: none;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
     font-size: inherit;
     font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading-color);
 }
 
@@ -46,7 +58,7 @@ p {
     --height: 58px;
     --width: 149px;
 
-    display: inline-flex;    
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     min-width: var(--width);
@@ -60,7 +72,7 @@ p {
 }
 
 .btn:hover {
-    opacity: .9;
+    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -73,7 +85,7 @@ p {
     height: 20px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.40); 
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 
 .btn--primary {
@@ -85,11 +97,11 @@ p {
     display: inline-flex;
     align-items: center;
     margin-bottom: 12px;
-    line-height: 1.75; 
+    line-height: 1.75;
 }
 
 .section-label::before {
-    content: '';
+    content: "";
     margin-right: 12px;
     width: 18px;
     height: 2px;
@@ -100,19 +112,19 @@ p {
     width: 470px;
     font-size: 4rem;
     font-weight: 700;
-    line-height: 1.25; 
+    line-height: 1.25;
 }
 
 .section-desc {
     width: 470px;
     margin-top: 20px;
     font-size: 1.8rem;
-    line-height: 1.67; 
+    line-height: 1.67;
 }
 
 /* Header */
 .header.fixed {
-    background: #FFF;
+    background: #fff;
     position: sticky;
     top: -32px;
     z-index: 99;
@@ -137,20 +149,32 @@ p {
 }
 
 .navbar__link {
+    position: relative;
     color: var(--text-color);
     padding: 8px 24px;
     line-height: 1.75;
 }
 
+.navbar__link--active,
 .navbar__link:hover {
     color: var(--heading-color);
     text-shadow: 1px 0 0 currentColor;
 }
 
+.navbar__link--active::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    height: 1px;
+    width: 47px;
+    border-radius: 0.5px;
+    background: var(--primary-color);
+}
+
 .header-action__link {
     padding: 8px 28px;
     font-weight: 600;
-    line-height: 1,75;
+    line-height: 1.75;
     color: var(--heading-color);
 }
 
@@ -194,7 +218,7 @@ p {
     width: 540px;
     height: 74px;
     border-radius: 8px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
     border: none;
     outline: none;
@@ -217,7 +241,7 @@ p {
     margin-top: 20px;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1.71; 
+    line-height: 1.71;
 }
 
 .hero__media {
@@ -230,18 +254,18 @@ p {
     height: 562px;
     border-radius: 40px;
     border: 12px solid #212832;
-    background: #FFF;
+    background: #fff;
 }
 
 .phone::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -12px;
     right: calc(76px - 12px);
     width: 144px;
     height: 36px;
     border-radius: 0 0 18px 18px;
-    background: #3C2F60;
+    background: #3c2f60;
 }
 
 .phone__inner {
@@ -251,10 +275,8 @@ p {
 .card {
     position: relative;
     padding: 16px;
-    width: 250px;
-    height: 150px;
     border-radius: 20px;
-    background: var(--primary-color);
+    background: linear-gradient(76deg, rgb(134, 121, 228) 11.52%, rgb(114, 100, 214) 70.78%);
     overflow: hidden;
     color: #fff;
     line-height: normal;
@@ -265,7 +287,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .card::after {
@@ -273,13 +295,15 @@ p {
     position: absolute;
     bottom: -3px;
     right: 0;
+    opacity: 0.6;
 }
 
 .card__top {
     display: flex;
     justify-content: space-between;
 }
-.card__top, 
+
+.card__top,
 .card__body {
     position: relative;
     z-index: 1;
@@ -288,12 +312,14 @@ p {
 .card__top-label {
     color: #fff;
     font-size: 1.4rem;
+    line-height: normal;
 }
 
 .card__top-price {
     margin-top: 2px;
     font-size: 2.2rem;
     font-weight: 700;
+    line-height: normal;
 }
 
 .card__top-circle {
@@ -307,40 +333,40 @@ p {
 .card__top-circle::before,
 .card__top-circle::after {
     position: absolute;
-    content: '';
+    content: "";
     width: var(--circle-size);
     height: var(--circle-size);
     border-radius: 50%;
 }
 
 .card__top-circle::before {
-    background: #FE6565;
+    background: #fe6565;
     top: 0;
     left: 0;
 }
 
 .card__top-circle::after {
-    background: #FEEF65;
+    background: #feef65;
     top: 0;
     right: 0;
 }
 
 .card__body {
     margin-top: 32px;
-    width: 192px;
+    white-space: nowrap;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 5px 12px;
 }
 
 .card__body-label {
-    color: #FFF;
+    color: #fff;
     font-size: 1rem;
     line-height: normal;
 }
 
 .card__body-value {
-    color: #FFF;
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: normal;
@@ -357,7 +383,7 @@ p {
 }
 
 .phone__heading {
-    color: #31456A;
+    color: #31456a;
     font-weight: 600;
     line-height: normal;
 }
@@ -423,13 +449,13 @@ p {
     left: -100px;
     padding: 14px 10px;
     border-radius: 6px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.phone-decor-1__num ,
+.phone-decor-1__num,
 .phone-decor-1__desc {
-    color: #31456A;
+    color: #31456a;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1;
@@ -438,14 +464,14 @@ p {
 
 .phone-decor-1__num {
     margin-left: 19px;
-    color: #4AB5E3;
+    color: #4ab5e3;
     font-weight: 400;
 }
 
 .phone-decor-2 {
     width: 130px;
     height: 130px;
-    background: #DA6464;
+    background: #da6464;
     border-radius: 50%;
     justify-content: center;
     top: 127px;
@@ -455,7 +481,7 @@ p {
 
 .phone-decor-2__desc,
 .phone-decor-2__num {
-    color: #FFF;
+    color: #fff;
     text-align: center;
 }
 
@@ -469,21 +495,21 @@ p {
     right: -74px;
     padding: 20px 14px;
     border-radius: 10px;
-    background: #439F90;
+    background: #439f90;
     display: flex;
     column-gap: 11px;
 }
 
 .phone-decor-3__num {
-    color: #FFF;
+    color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .phone-decor-3__desc {
     margin-top: 5px;
-    color: #FFF;
+    color: #fff;
     font-size: 0.8rem;
     line-height: 1;
     opacity: 0.6;
@@ -543,7 +569,7 @@ p {
     height: 70px;
     padding: 15px;
     border-radius: 8px;
-    background: #FFFDFA;
+    background: #fffdfa;
     box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -551,7 +577,7 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 6px;
-    background: #4AB5E3;
+    background: #4ab5e3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,7 +586,7 @@ p {
 .work__decor-icon {
     padding: 7px 5px 6.5px;
     border-radius: 20px;
-    background: #FFF;
+    background: #fff;
 }
 
 .work__icon-heading {
@@ -597,3 +623,135 @@ p {
     line-height: 1.75;
 }
 
+/* Product */
+.product {
+    margin-top: 160px;
+}
+
+.product__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.product__list {
+    margin-top: 28px;
+}
+
+.product__item {
+    margin-top: 18px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.product__item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.product__btn {
+    margin-top: 38px;
+}
+
+.product__media {
+    position: relative;
+}
+.product__card {
+    padding: 38px;
+}
+
+.product__card::before {
+    content: url(../icons/card-decor-product-01.svg);
+    opacity: 1;
+}
+
+.product__card::after {
+    content: url(../icons/card-decor-product-02.svg);
+    opacity: 0.8;
+}
+
+.product-card__body {
+    gap: 4px 26px;
+    margin-top: 98px;
+    width: fit-content;
+}
+
+.card__top--product {
+    column-gap: 160px;
+}
+
+.card__top-label--product {
+    font-size: 2.4rem;
+}
+
+.card__top-price--product {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 3.2rem;
+}
+
+.card__top-circle--product {
+    --circle-width: 80px;
+    --circle-size: 48px;
+}
+
+.card__body-label--product {
+    font-size: 2rem;
+}
+
+.card__body-value--product {
+    font-size: 2.2rem;
+}
+
+.card__decor-1 {
+    width: 276px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 3;
+    top: -48px;
+    left: 294px;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
+}
+
+.card__decor-2 {
+    position: absolute;
+    width: 120px;
+    bottom: -55px;
+    left: 450px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.product-decor__icon {
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.product-decor__desc {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.product-decor__num {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}

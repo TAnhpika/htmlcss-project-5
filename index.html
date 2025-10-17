@@ -1,286 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucy - Pet Care Landing Page</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lucy - Pet Care Landing Page</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header fixed">
-        <div class="container">
-            <div class="header__inner">
-                <!-- Logo -->
-                <img src="./assets/img/logo.svg" alt="Lucy" class="logo">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="/"><img src="./assets/img/logo.svg" alt="Lucy" class="logo" /></a>
 
-                <!-- Navbar -->
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Products</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Features</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">Blog</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link navbar__link--active">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#product" class="navbar__link">Products</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#feature" class="navbar__link">Features</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#blog" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                <!-- Header action -->
-                <div class="header-action">
-                    <a href="#!" class="header-action__link">Log in</a>
-                    <a href="#!" class="btn header-action__btn">Sign up</a>
+                    <!-- Header action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Log in</a>
+                        <a href="#!" class="btn header-action__btn">Sign up</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    
-    <main style="height: 5000px;">
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <!-- Hero content -->
-                    <section class="hero__content">
-                        <p class="section-label">Digital Smart Wallet</p>
-                        <h1 class="section-heading hero__heading">Digital <b>Payment</b> For Everyone.</h1>
-                        <p class="section-desc">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.</p>
+        <main style="height: 5000px">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h1 class="section-heading hero__heading">Digital <b>Payment</b> For Everyone.</h1>
+                            <p class="section-desc">
+                                We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.
+                            </p>
 
-                        <form class="hero__form" action="">
-                            <input class="hero__input" type="email" name="email" id="email" placeholder="Your email address">
-                            <button type="submit" class="btn btn--primary hero__btn">Get Started</button>
-                        </form>
+                            <form class="hero__form" action="">
+                                <input class="hero__input" type="email" name="email" id="email" placeholder="Your email address" />
+                                <button type="submit" class="btn btn--primary hero__btn">Get Started</button>
+                            </form>
 
-                        <p class="hero__note">*We’ll respect the inbox and never share your email.</p>
-                    </section>
-                    
-                    <!-- Hero media -->
-                    <section class="hero__media">
-                        <figure class="phone">
-                            <div class="phone__inner">
-                                <div class="card">
-                                    <div class="card__top">
-                                        <div class="card__top-content">
-                                            <p class="card__top-label">Main Balance</p>
-                                            <span class="card__top-price">$78,355.17</span>
+                            <p class="hero__note">*We’ll respect the inbox and never share your email.</p>
+                        </section>
+
+                        <!-- Hero media -->
+                        <section class="hero__media">
+                            <figure class="phone">
+                                <div class="phone__inner">
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__top-content">
+                                                <p class="card__top-label">Main Balance</p>
+                                                <span class="card__top-price">$78,355.17</span>
+                                            </div>
+
+                                            <div class="card__top-circle"></div>
                                         </div>
 
-                                        <div class="card__top-circle"></div>
+                                        <div class="card__body">
+                                            <p class="card__body-label">VALID THUR</p>
+                                            <p class="card__body-label">CARD HOLDER</p>
+                                            <time class="card__body-value">08/22</time>
+                                            <p class="card__body-value">Md Moshqur Alam</p>
+                                        </div>
                                     </div>
 
-                                    <div class="card__body">
-                                        <p class="card__body-label">VALID THUR</p>
-                                        <p class="card__body-label">CARD HOLDER</p>
-                                        <time class="card__body-value">08/22</time>
-                                        <p class="card__body-value">Md Moshqur Alam</p>
+                                    <div class="phone__body">
+                                        <div class="phone__row">
+                                            <h3 class="phone__heading">Transections</h3>
+                                            <img src="./assets/icons/phone-00.svg" alt="" class="phone__icon" />
+                                        </div>
+
+                                        <div class="phone__list">
+                                            <!-- Phone item 1 -->
+                                            <div class="phone__item">
+                                                <div class="phone__item-icon">
+                                                    <img src="./assets/icons/phone-01.svg" alt="" />
+                                                </div>
+
+                                                <div class="phone__item-body">
+                                                    <div class="phone__row top">
+                                                        <h4>Received Money</h4>
+                                                        <span>+$1,600</span>
+                                                    </div>
+
+                                                    <div class="phone__row bottom">
+                                                        <p>email@gmail.com</p>
+                                                        <time>Sep 23</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Phone item 2 -->
+                                            <div class="phone__item">
+                                                <div class="phone__item-icon">
+                                                    <img src="./assets/icons/phone-02.svg" alt="" />
+                                                </div>
+
+                                                <div class="phone__item-body">
+                                                    <div class="phone__row top">
+                                                        <h4>Send Money</h4>
+                                                        <span>- $600</span>
+                                                    </div>
+
+                                                    <div class="phone__row bottom">
+                                                        <p>Airbnb Payment</p>
+                                                        <time>Sep 23</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Phone item 3 -->
+                                            <div class="phone__item">
+                                                <div class="phone__item-icon">
+                                                    <img src="./assets/icons/phone-03.svg" alt="" />
+                                                </div>
+
+                                                <div class="phone__item-body">
+                                                    <div class="phone__row top">
+                                                        <h4>Received Money</h4>
+                                                        <span>+$1,600</span>
+                                                    </div>
+
+                                                    <div class="phone__row bottom">
+                                                        <p>Upwork Earning</p>
+                                                        <time>Sep 23</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Phone item 4 -->
+                                            <div class="phone__item">
+                                                <div class="phone__item-icon">
+                                                    <img src="./assets/icons/phone-04.svg" alt="" />
+                                                </div>
+
+                                                <div class="phone__item-body">
+                                                    <div class="phone__row top">
+                                                        <h4>Pay Bill</h4>
+                                                        <span>- $600</span>
+                                                    </div>
+
+                                                    <div class="phone__row bottom">
+                                                        <p>Electricity Bill</p>
+                                                        <time>Sep 23</time>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </figure>
 
-                                <div class="phone__body">
-                                    <div class="phone__row">
-                                        <h3 class="phone__heading">Transections</h3>
-                                        <img src="./assets/icons/phone-00.svg" alt="" class="phone__icon">
+                            <div class="phone-decor phone-decor-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                    <path d="M0.5 10.5V18.5H18.5V10.5" stroke="#8376E2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.5 0.5V12.5M9.5 12.5L12.5 9.5M9.5 12.5L6.5 9.5" stroke="#8376E2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                                <p class="phone-decor-1__desc">Deposite</p>
+                                <span class="phone-decor-1__num">$32000</span>
+                            </div>
+
+                            <div class="phone-decor phone-decor-2">
+                                <span class="phone-decor-2__num">0%</span>
+                                <p class="phone-decor-2__desc">Interest</p>
+                            </div>
+
+                            <div class="phone-decor phone-decor-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26" fill="none">
+                                    <path
+                                        d="M20 2.925C13.75 2.925 11.25 1.3 10 0C8.75 1.3 6.25 2.925 0 2.925V13.325C0 16.25 1.25 21.45 10 26C18.75 21.45 20 16.25 20 13.325V2.925Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M10.6381 18.4703V19.4602C10.6381 19.758 10.396 19.9993 10.0971 19.9993C9.79381 20.0143 9.53577 19.781 9.52158 19.4788C9.52158 19.4726 9.5207 19.4664 9.5207 19.4602V18.488C8.28893 18.4483 7.11123 17.9754 6.19517 17.1535C6.06924 17.0262 5.99919 16.8548 6.00007 16.6763C5.99474 16.268 6.30956 15.9268 6.71838 15.8985C6.87977 15.902 7.03586 15.9577 7.1618 16.0576C7.83045 16.6179 8.64633 16.9759 9.51184 17.0917V13.5564C7.87122 13.1146 6.15967 12.5577 6.15967 10.5515C6.15967 8.91652 7.51648 7.68803 9.51181 7.54664V6.53912C9.51626 6.24303 9.75568 6.00443 10.0528 6C10.3516 6 10.5937 6.24128 10.5937 6.53912V7.59083C11.6162 7.64915 12.5917 8.04066 13.3694 8.70442C13.4954 8.83168 13.5654 9.00315 13.5645 9.18165C13.5601 9.59791 13.2196 9.93288 12.8019 9.93288C12.6715 9.9311 12.5456 9.89134 12.4383 9.81798C11.9 9.4079 11.2704 9.13481 10.6026 9.02256V12.1247C12.2432 12.5666 13.9991 13.2029 13.9991 15.2887C14.0345 16.8442 13.0591 18.3113 10.6381 18.4703ZM9.52067 8.95188C8.4831 9.03142 7.80026 9.62356 7.80026 10.4455C7.80026 11.2674 8.55405 11.5591 9.52067 11.8419V8.95188ZM10.6381 13.8923V17.1093C11.9505 16.9502 12.4117 16.1548 12.4117 15.4831C12.4205 14.5551 11.6402 14.1751 10.6381 13.8923Z"
+                                        fill="#439F90"
+                                    />
+                                </svg>
+                                <div class="phone-decor-3__content">
+                                    <span class="phone-decor-3__num">$1.310</span>
+                                    <p class="phone-decor-3__desc">SECURED FUNDS</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work -->
+            <section class="work">
+                <div class="container">
+                    <div class="work__inner">
+                        <div class="work__media">
+                            <div class="work__img-wrap">
+                                <img src="./assets/img/work-01.png" alt="" class="work__img" />
+
+                                <!-- Decorators -->
+                                <img src="./assets/icons/work-decor-01.svg" alt="" class="work__decor work__decor-up" />
+                                <div class="work__decor work__decor-down">
+                                    <div class="work__icon-wrap">
+                                        <img src="./assets/icons/work-decor-02.svg" alt="" class="work__decor-icon" />
                                     </div>
-
-                                    <div class="phone__list">
-                                        <!-- Phone item 1 -->
-                                        <div class="phone__item">
-                                            <div class="phone__item-icon">
-                                                <img src="./assets/icons/phone-01.svg" alt="">
-                                            </div>
-
-                                            <div class="phone__item-body">
-                                                <div class="phone__row top">
-                                                    <h4>Received Money</h4>
-                                                    <span>+$1,600</span>
-                                                </div>
-
-                                                <div class="phone__row bottom">
-                                                    <p>email@gmail.com</p>
-                                                    <time>Sep 23</time>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Phone item 2 -->
-                                        <div class="phone__item">
-                                            <div class="phone__item-icon">
-                                                <img src="./assets/icons/phone-02.svg" alt="">
-                                            </div>
-
-                                            <div class="phone__item-body">
-                                                <div class="phone__row top">
-                                                    <h4>Send Money</h4>
-                                                    <span>- $600</span>
-                                                </div>
-
-                                                <div class="phone__row bottom">
-                                                    <p>Airbnb Payment</p>
-                                                    <time>Sep 23</time>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Phone item 3 -->
-                                        <div class="phone__item">
-                                            <div class="phone__item-icon">
-                                                <img src="./assets/icons/phone-03.svg" alt="">
-                                            </div>
-
-                                            <div class="phone__item-body">
-                                                <div class="phone__row top">
-                                                    <h4>Received Money</h4>
-                                                    <span>+$1,600</span>
-                                                </div>
-
-                                                <div class="phone__row bottom">
-                                                    <p>Upwork Earning</p>
-                                                    <time>Sep 23</time>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Phone item 4 -->
-                                        <div class="phone__item">
-                                            <div class="phone__item-icon">
-                                                <img src="./assets/icons/phone-04.svg" alt="">
-                                            </div>
-
-                                            <div class="phone__item-body">
-                                                <div class="phone__row top">
-                                                    <h4>Pay Bill</h4>
-                                                    <span>- $600</span>
-                                                </div>
-
-                                                <div class="phone__row bottom">
-                                                    <p>Electricity Bill</p>
-                                                    <time>Sep 23</time>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div>
+                                        <h3 class="work__icon-heading">Congratulations</h3>
+                                        <p class="work__icon-desc">Your account activated</p>
                                     </div>
                                 </div>
                             </div>
-                        </figure>
-
-                        <div class="phone-decor phone-decor-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                <path d="M0.5 10.5V18.5H18.5V10.5" stroke="#8376E2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.5 0.5V12.5M9.5 12.5L12.5 9.5M9.5 12.5L6.5 9.5" stroke="#8376E2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-
-                            <p class="phone-decor-1__desc">Deposite</p>
-                            <span class="phone-decor-1__num">$32000</span>
                         </div>
 
-                        <div class="phone-decor phone-decor-2">
-                            <span class="phone-decor-2__num">0%</span>
-                            <p class="phone-decor-2__desc">Interest</p>
-                        </div>
+                        <div class="work__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h2 class="section-heading">How It Works</h2>
 
-                        <div class="phone-decor phone-decor-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26" fill="none">
-                                <path d="M20 2.925C13.75 2.925 11.25 1.3 10 0C8.75 1.3 6.25 2.925 0 2.925V13.325C0 16.25 1.25 21.45 10 26C18.75 21.45 20 16.25 20 13.325V2.925Z" fill="white"/>
-                                <path d="M10.6381 18.4703V19.4602C10.6381 19.758 10.396 19.9993 10.0971 19.9993C9.79381 20.0143 9.53577 19.781 9.52158 19.4788C9.52158 19.4726 9.5207 19.4664 9.5207 19.4602V18.488C8.28893 18.4483 7.11123 17.9754 6.19517 17.1535C6.06924 17.0262 5.99919 16.8548 6.00007 16.6763C5.99474 16.268 6.30956 15.9268 6.71838 15.8985C6.87977 15.902 7.03586 15.9577 7.1618 16.0576C7.83045 16.6179 8.64633 16.9759 9.51184 17.0917V13.5564C7.87122 13.1146 6.15967 12.5577 6.15967 10.5515C6.15967 8.91652 7.51648 7.68803 9.51181 7.54664V6.53912C9.51626 6.24303 9.75568 6.00443 10.0528 6C10.3516 6 10.5937 6.24128 10.5937 6.53912V7.59083C11.6162 7.64915 12.5917 8.04066 13.3694 8.70442C13.4954 8.83168 13.5654 9.00315 13.5645 9.18165C13.5601 9.59791 13.2196 9.93288 12.8019 9.93288C12.6715 9.9311 12.5456 9.89134 12.4383 9.81798C11.9 9.4079 11.2704 9.13481 10.6026 9.02256V12.1247C12.2432 12.5666 13.9991 13.2029 13.9991 15.2887C14.0345 16.8442 13.0591 18.3113 10.6381 18.4703ZM9.52067 8.95188C8.4831 9.03142 7.80026 9.62356 7.80026 10.4455C7.80026 11.2674 8.55405 11.5591 9.52067 11.8419V8.95188ZM10.6381 13.8923V17.1093C11.9505 16.9502 12.4117 16.1548 12.4117 15.4831C12.4205 14.5551 11.6402 14.1751 10.6381 13.8923Z" fill="#439F90"/>
-                            </svg>
-                            <div class="phone-decor-3__content">
-                                <span class="phone-decor-3__num">$1.310</span>
-                                <p class="phone-decor-3__desc">SECURED FUNDS</p>
+                            <div class="work__list">
+                                <!-- Work item 1 -->
+                                <div class="work__item">
+                                    <h3 class="work__item-heading">1. Open a High Interest Checking account</h3>
+                                    <p class="work__item-desc">Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!</p>
+                                </div>
+                                <!-- Work item 2 -->
+                                <div class="work__item">
+                                    <h3 class="work__item-heading">2. 10 point-of-sale transactions each Month that are at least $10 each.</h3>
+                                    <p class="work__item-desc">Be sure to use your rewards checking account as often as possible in order to accue APYI</p>
+                                </div>
+                                <!-- Work item 3 -->
+                                <div class="work__item">
+                                    <h3 class="work__item-heading">3. Receive up to 5.50% APY</h3>
+                                    <p class="work__item-desc">The APY you earn will be based on your account balance and satisfying the transaction requirement.</p>
+                                </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Work -->
-        <section class="work">
-            <div class="container">
-                <div class="work__inner">
-                    <div class="work__media">
-                        <div class="work__img-wrap">
-                            <img src="./assets/img/work-01.png" alt="" class="work__img">
-    
+            <section id="product" class="product">
+                <div class="container">
+                    <div class="product__inner">
+                        <div class="product__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h2 class="section-heading">One Card For All Your Payments</h2>
+                            <p class="section-desc">
+                                We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.
+                            </p>
+
+                            <ul class="product__list">
+                                <li class="product__item">Global Payments</li>
+                                <li class="product__item">One-Click Purchase</li>
+                                <li class="product__item">Friendly Price</li>
+                            </ul>
+
+                            <div class="btn product__btn">Get Started</div>
+                        </div>
+
+                        <div class="product__media">
+                            <div class="card product__card">
+                                <div class="card__top card__top--product">
+                                    <div class="card__top-content">
+                                        <p class="card__top-label card__top-label--product">Main Balance</p>
+                                        <span class="card__top-price card__top-price--product">$78,355.17</span>
+                                    </div>
+
+                                    <div class="card__top-circle card__top-circle--product"></div>
+                                </div>
+
+                                <div class="card__body product-card__body">
+                                    <p class="card__body-label card__body-label--product">VALID THUR</p>
+                                    <p class="card__body-label card__body-label--product">CARD HOLDER</p>
+                                    <time class="card__body-value card__body-value--product">08/22</time>
+                                    <p class="card__body-value card__body-value--product">Md Moshqur Alam</p>
+                                </div>
+                            </div>
                             <!-- Decorators -->
-                            <img src="./assets/icons/work-decor-01.svg" alt="" class="work__decor work__decor-up">
-                            <div class="work__decor work__decor-down">
-                                <div class="work__icon-wrap">
-                                    <img src="./assets/icons/work-decor-02.svg" alt="" class="work__decor-icon">
+                            <div class="phone__item card__decor-1">
+                                <div class="phone__item-icon">
+                                    <img src="./assets/icons/phone-02.svg" alt="" />
                                 </div>
-                                <div>
-                                    <h3 class="work__icon-heading">Congratulations</h3>
-                                    <p class="work__icon-desc">Your account activated</p>
+
+                                <div class="phone__item-body">
+                                    <div class="phone__row top">
+                                        <h4>Send Money</h4>
+                                        <span>- $600</span>
+                                    </div>
+
+                                    <div class="phone__row bottom">
+                                        <p>Airbnb Payment</p>
+                                        <time>Sep 23</time>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="work__content">
-                        <p class="section-label">Digital Smart Wallet</p>
-                        <h2 class="section-heading">How It Works</h2>
-
-                        <div class="work__list">
-                            <!-- Work item 1 -->
-                            <div class="work__item">
-                                <h3 class="work__item-heading">1. Open a High Interest Checking account</h3>
-                                <p class="work__item-desc">Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!</p>
-                            </div>
-                            <!-- Work item 2 -->
-                            <div class="work__item">
-                                <h3 class="work__item-heading">2. 10 point-of-sale transactions each Month that are at least $10 each.</h3>
-                                <p class="work__item-desc">Be sure to use your rewards checking account as often as possible in order to accue APYI</p>
-                            </div>
-                            <!-- Work item 3 -->
-                            <div class="work__item">
-                                <h3 class="work__item-heading">3. Receive up to 5.50% APY</h3>
-                                <p class="work__item-desc">The APY you earn will be based on your account balance and satisfying the transaction requirement.</p>
+                            <div class="card__decor-2">
+                                <img class="product-decor__icon" src="./assets/icons/card-decor-product-03.svg" alt="" />
+                                <p class="product-decor__desc">Income</p>
+                                <span class="product-decor__num">$1250</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-       </section>
-    </main>
+            </section>
+        </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner"></div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
