@@ -530,6 +530,8 @@ p {
     position: relative;
     width: 456px;
     height: 619px;
+    display: flex;
+    justify-content: center;
 }
 
 .work__img-wrap::after {
@@ -634,11 +636,11 @@ p {
     column-gap: 130px;
 }
 
-.product__list {
+.section__list {
     margin-top: 28px;
 }
 
-.product__item {
+.section__item {
     margin-top: 18px;
     color: #212832;
     font-size: 1.8rem;
@@ -649,7 +651,7 @@ p {
     column-gap: 12px;
 }
 
-.product__item::before {
+.section__item::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -658,7 +660,7 @@ p {
     border-radius: 50%;
 }
 
-.product__btn {
+.section__btn {
     margin-top: 38px;
 }
 
@@ -754,4 +756,95 @@ p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: normal;
+}
+
+/* Features */
+.features {
+    margin-top: 160px;
+}
+
+.features__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 230px;
+}
+
+.features__media {
+    position: relative;
+}
+
+.features__img-wrap {
+    position: relative;
+    width: 413px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.features__img-wrap::after {
+    content: url(../img/features-02.svg);
+    position: absolute;
+    bottom: 0;
+}
+
+.features__img {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.features-decor {
+    position: absolute;
+    z-index: 1;
+    bottom: 57px;
+    left: 234px;
+    padding: 28px;
+    background: #fff;
+    border-radius: 8px;
+    filter: drop-shadow(0 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.features-decor__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.features-decor__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 18px;
+}
+
+.features-decor__wrap-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.features-decor__wrap-item:last-child {
+    background: #f9ea63;
+}
+
+.features-sub-decor {
+    position: absolute;
+    top: -35px;
+    left: 217px;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background: #7264d6;
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
