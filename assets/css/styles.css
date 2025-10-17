@@ -854,6 +854,7 @@ p {
     margin-top: 160px;
 }
 
+.app__top,
 .comment__top {
     text-align: center;
     display: flex;
@@ -1029,3 +1030,66 @@ p {
 .blog__item-more:hover {
     color: var(--primary-color);
 }
+
+/* App */
+.app {
+    margin-top: 160px;
+}
+
+.app__inner {
+    position: relative;
+    padding: 100px 0;
+    border-radius: 24px;
+    background: var(--primary-color);
+}
+
+.app__top p,
+.app__top h2 {
+    color: #fff;
+}
+
+.app__top p::before {
+    background: #fff;
+}
+
+.app__body {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.app__item {
+    width: 182px;
+    height: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.app__decor {
+    position: absolute;
+}
+
+.app__decor-1 {
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor-2 {
+    bottom: 49px;
+    left: 166px;
+}
+
+.app__decor-3 {
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor-4 {
+    bottom: 49px;
+    right: 166px;
+}
+
