@@ -69,9 +69,12 @@ p {
     text-align: center;
     color: #fff;
     background: var(--heading-color);
+    transition: background-color 0.25s, opacity 0.25s;
+    /* transition: ; */
 }
 
 .btn:hover {
+    background: var(--primary-color);
     opacity: 0.9;
     cursor: pointer;
 }
@@ -122,13 +125,29 @@ p {
     line-height: 1.67;
 }
 
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes moveOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(8px);
+    }
+}
 /* Header */
 .header.fixed {
     background: #fff;
     position: sticky;
     top: -32px;
     z-index: 99;
-    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
@@ -139,7 +158,6 @@ p {
 .header__inner {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .navbar__list {
@@ -153,6 +171,7 @@ p {
     color: var(--text-color);
     padding: 8px 24px;
     line-height: 1.75;
+    transition: text-shadow 0.25s;
 }
 
 .navbar__link--active,
@@ -451,6 +470,7 @@ p {
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+    animation: 1s linear 3.8s infinite alternate none running moveOut;
 }
 
 .phone-decor-1__num,
@@ -477,6 +497,7 @@ p {
     top: 127px;
     right: -172px;
     flex-direction: column;
+    animation: 1s linear 3.8s infinite alternate none running move;
 }
 
 .phone-decor-2__desc,
@@ -492,12 +513,13 @@ p {
 
 .phone-decor-3 {
     bottom: 61px;
-    right: -74px;
+    right: -100px;
     padding: 20px 14px;
     border-radius: 10px;
     background: #439f90;
     display: flex;
     column-gap: 11px;
+    animation: 1s linear 3.8s infinite alternate none running move;
 }
 
 .phone-decor-3__num {
@@ -795,7 +817,7 @@ p {
     object-fit: cover;
 }
 
-.features-decor {
+.features-decor__inner {
     position: absolute;
     z-index: 1;
     bottom: 57px;
@@ -884,6 +906,7 @@ p {
     border: 1px solid #dfe2e8;
     border-radius: 8px;
     filter: drop-shadow(rgb(168, 169, 171) 0px 0px 1px);
+    transition: filter 0.8s, border-color .8s;
 }
 
 .comment__chat-box::after {
@@ -996,6 +1019,7 @@ p {
     border-radius: 12px;
     border: 1px solid #dfe2e8;
     background: #fff;
+    transition: box-shadow 0.5s, border-color 0.5s;
 }
 
 .blog__item:hover {
@@ -1003,11 +1027,16 @@ p {
     border-color: transparent;
 }
 
+.blog__item:hover .blog__img {
+    scale: 1.01;
+}
+
 .blog__img {
     width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 12px;
+    transition: scale 0.5s;
 }
 
 .blog__item-time {
@@ -1067,6 +1096,11 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    transition: opacity 0.25s;
+}
+
+.app__item:hover {
+    opacity: 0.9;
 }
 
 .app__decor {
