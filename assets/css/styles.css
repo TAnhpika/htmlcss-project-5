@@ -886,9 +886,10 @@ p {
 
 .comment__body {
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 30px;
+}
+
+.comment__list {
+    display: flex;
 }
 
 .comment__item {
@@ -906,7 +907,7 @@ p {
     border: 1px solid #dfe2e8;
     border-radius: 8px;
     filter: drop-shadow(rgb(168, 169, 171) 0px 0px 1px);
-    transition: filter 0.8s, border-color .8s;
+    transition: filter 0.8s, border-color 0.8s;
 }
 
 .comment__chat-box::after {
@@ -948,8 +949,14 @@ p {
     overflow: hidden;
 }
 
-.comment__item:nth-child(2) .author__img-wrap {
+.comment__item--2 .author__img-wrap {
     background: #439f90;
+}
+.comment__item--3 .author__img-wrap {
+    background: pink;
+}
+.comment__item--4 .author__img-wrap {
+    background: var(--primary-color);
 }
 
 .author__img {
@@ -974,22 +981,20 @@ p {
     line-height: 1.67;
 }
 
-.comment__arrows {
-    margin: 38px;
-    display: flex;
-    justify-content: center;
-    column-gap: 12px;
+.swiper-pagination {
+    position: relative;
+    margin-top: 60px;
 }
 
-.comment__arrow-item {
+.swiper-pagination-bullet {
     width: 22px;
     height: 6px;
-    border-radius: 1px;
     border: 1px solid #9b9fab;
+    border-radius: 1px;
 }
 
-.comment__arrow-item--active {
-    background: #7264d6;
+.swiper-pagination-bullet-active {
+    background-color: #7264d6;
     border-color: #7264d6;
 }
 
