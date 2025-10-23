@@ -110,6 +110,9 @@
         border-top: 1.5px solid #ebebeb;
     }
 
+    .hero {
+        margin-top: 80px;
+    }
     .blog .row {
         row-gap: var(--spacer);
     }
