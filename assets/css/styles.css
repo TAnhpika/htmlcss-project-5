@@ -152,13 +152,14 @@ p {
 .header.fixed {
     background: #fff;
     position: sticky;
-    top: -32px;
+    top: -10px;
     z-index: 99;
     padding-bottom: 10px;
 }
 
 .header {
-    padding-top: 42px;
+    /* padding-top: 42px; */
+    padding-top: 20px;
 }
 
 .header__inner {
@@ -222,7 +223,8 @@ p {
 
 /* Hero */
 .hero {
-    margin-top: 66px;
+    /* margin-top: 66px; */
+    margin-top: 26px;
 }
 
 .hero__inner {
@@ -231,7 +233,7 @@ p {
 }
 
 .hero__heading {
-    width: 500px;
+    max-width: 500px;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.17;
@@ -239,6 +241,10 @@ p {
 
 .hero__heading b {
     color: var(--primary-color);
+}
+
+.hero .section-desc {
+    max-width: 540px;
 }
 
 .hero__form {
@@ -264,7 +270,7 @@ p {
 
 .hero__btn {
     position: absolute;
-    right: 8px;
+    right: 22px;
     top: 8px;
     border: none;
 }
@@ -703,7 +709,7 @@ p {
 
 .product__media {
     position: relative;
-} 
+}
 
 .product__card {
     padding: 38px;
@@ -1000,7 +1006,7 @@ p {
 
 .swiper-pagination {
     position: relative;
-    margin-top: 60px;
+    margin-top: 28px;
 }
 
 .swiper-pagination-bullet {

@@ -14,6 +14,7 @@
 
 .row {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--spacer) / 2);
   margin-right: calc(-1 * var(--spacer) / 2);
