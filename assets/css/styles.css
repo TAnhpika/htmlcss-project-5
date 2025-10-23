@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -6,6 +8,7 @@
     --primary-color: #7264d6;
     --heading-color: #212832;
     --text-color: #696d76;
+    --section-spacing: 160px;
 }
 
 html,
@@ -49,10 +52,13 @@ p {
 }
 
 .container {
-    width: 1170px;
-    max-width: calc(100% - 48px);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.container-header {
+    width: min(1170px, 100% - 48px);
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .btn {
@@ -71,7 +77,6 @@ p {
     color: #fff;
     background: var(--heading-color);
     transition: background-color 0.25s, opacity 0.25s;
-    /* transition: ; */
 }
 
 .btn:hover {
@@ -94,7 +99,6 @@ p {
 
 .btn--primary {
     background: var(--primary-color) !important;
-    /* border: var(--primary-color) !important; */
 }
 
 .section-label {
@@ -113,14 +117,14 @@ p {
 }
 
 .section-heading {
-    width: 470px;
+    max-width: 470px;
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25;
 }
 
 .section-desc {
-    width: 470px;
+    max-width: 470px;
     margin-top: 20px;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -143,6 +147,7 @@ p {
         transform: translateX(8px);
     }
 }
+
 /* Header */
 .header.fixed {
     background: #fff;
@@ -157,6 +162,14 @@ p {
 }
 
 .header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -164,7 +177,6 @@ p {
 .navbar__list {
     display: flex;
     margin-left: calc(70px - 24px);
-    margin-right: 395px;
 }
 
 .navbar__link {
@@ -331,13 +343,13 @@ p {
 
 .card__top-label {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: normal;
 }
 
 .card__top-price {
     margin-top: 2px;
-    font-size: 2.2rem;
+    font-size: 22px;
     font-weight: 700;
     line-height: normal;
 }
@@ -381,13 +393,13 @@ p {
 
 .card__body-label {
     color: #fff;
-    font-size: 1rem;
+    font-size: 10px;
     line-height: normal;
 }
 
 .card__body-value {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: 600;
     line-height: normal;
 }
@@ -403,6 +415,7 @@ p {
 }
 
 .phone__heading {
+    font-size: 16px;
     color: #31456a;
     font-weight: 600;
     line-height: normal;
@@ -446,7 +459,7 @@ p {
 }
 
 .phone__row.top {
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1;
 }
@@ -454,7 +467,7 @@ p {
 .phone__row.bottom {
     margin-top: 6px;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 10px;
     line-height: 1;
 }
 
@@ -477,7 +490,7 @@ p {
 .phone-decor-1__num,
 .phone-decor-1__desc {
     color: #31456a;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1;
     margin-left: 8px;
@@ -504,7 +517,10 @@ p {
 .phone-decor-2__desc,
 .phone-decor-2__num {
     color: #fff;
-    text-align: center;
+}
+
+.phone-decor-2__desc {
+    font-size: 16px;
 }
 
 .phone-decor-2__num {
@@ -525,7 +541,7 @@ p {
 
 .phone-decor-3__num {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1;
 }
@@ -533,14 +549,14 @@ p {
 .phone-decor-3__desc {
     margin-top: 5px;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 8px;
     line-height: 1;
     opacity: 0.6;
 }
 
 /* Work */
 .work {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
 .work__inner {
@@ -590,7 +606,7 @@ p {
     left: 337px;
     display: flex;
     column-gap: 10px;
-    width: 226px;
+    width: 222px;
     height: 70px;
     padding: 15px;
     border-radius: 8px;
@@ -617,7 +633,7 @@ p {
 .work__icon-heading {
     color: #212832;
     font-family: Inter;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: normal;
 }
@@ -650,13 +666,11 @@ p {
 
 /* Product */
 .product {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
-.product__inner {
-    display: flex;
+.product .row {
     align-items: center;
-    column-gap: 130px;
 }
 
 .section__list {
@@ -689,9 +703,11 @@ p {
 
 .product__media {
     position: relative;
-}
+} 
+
 .product__card {
     padding: 38px;
+    max-width: 482px;
 }
 
 .product__card::before {
@@ -708,10 +724,6 @@ p {
     gap: 4px 26px;
     margin-top: 98px;
     width: fit-content;
-}
-
-.card__top--product {
-    column-gap: 160px;
 }
 
 .card__top-label--product {
@@ -737,10 +749,13 @@ p {
     font-size: 2.2rem;
 }
 
+.card__decor {
+    position: absolute;
+}
+
 .card__decor-1 {
     width: 276px;
     margin-top: 0;
-    position: absolute;
     z-index: 3;
     top: -48px;
     left: 294px;
@@ -751,7 +766,6 @@ p {
 }
 
 .card__decor-2 {
-    position: absolute;
     width: 120px;
     bottom: -55px;
     left: 450px;
@@ -783,7 +797,7 @@ p {
 
 /* Features */
 .features {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
 .features__inner {
@@ -874,7 +888,7 @@ p {
 
 /* Comment */
 .comment {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
 .app__top,
@@ -887,6 +901,8 @@ p {
 
 .comment__body {
     margin-top: 70px;
+    position: relative;
+    z-index: 0;
 }
 
 .comment__list {
@@ -902,7 +918,7 @@ p {
 
 .comment__chat-box {
     position: relative;
-    width: 570px;
+    max-width: 570px;
     padding: 42px 28px;
     background: #fff;
     border: 1px solid #dfe2e8;
@@ -1001,10 +1017,11 @@ p {
 
 /* Blog */
 .blog {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
 .blog__top {
+    margin-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1018,6 +1035,7 @@ p {
 }
 
 .blog__item {
+    height: 100%;
     padding: 28px;
     display: flex;
     align-items: center;
@@ -1033,7 +1051,7 @@ p {
     border-color: transparent;
 }
 
-.blog__img:hover  {
+.blog__img:hover {
     scale: 1.02;
 }
 
@@ -1072,12 +1090,12 @@ p {
 
 /* App */
 .app {
-    margin-top: 160px;
+    margin-top: var(--section-spacing);
 }
 
 .app__inner {
     position: relative;
-    padding: 100px 0;
+    padding: 100px 20px;
     border-radius: 24px;
     background: var(--primary-color);
 }
@@ -1167,7 +1185,7 @@ p {
     margin-top: 10px;
     color: #6a6e78;
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.67;
 }
 

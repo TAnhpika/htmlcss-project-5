@@ -1,0 +1,259 @@
+/* Laptop */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none !important;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .hero .section-desc {
+        width: 540px;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    :root {
+        --section-spacing: 80px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding-top: 10px;
+    }
+
+    .header.fixed {
+        z-index: 97 !important;
+        top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .header__left {
+        width: 68%;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .toggle-menu {
+        display: inline-block;
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 98;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background: #fff;
+        z-index: 99;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #4f5361;
+        padding: 14px 0;
+    }
+
+    .menu-drawer ul a:hover {
+        text-decoration: underline;
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .blog .row {
+        row-gap: var(--spacer);
+    }
+
+    .card__decor-1 {
+        top: -60px;
+        right: -15px;
+    }
+
+    .card__decor-2 {
+        bottom: -82px;
+        right: -15px;
+    }
+    .app__decor {
+        display: none;
+    }
+
+    .footer__inner {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    .footer__form {
+        display: flex;
+        gap: 7px;
+    }
+
+    .footer__row {
+        margin-top: 20px;
+    }
+
+    .phone ,
+    .product__media {
+        margin-top: 25px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none !important;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .container-header {
+        width: calc(100% - 20px);
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+
+    .header-action {
+        display: none;
+    }
+
+    .hero__heading {
+        width: auto;
+    }
+
+    .phone-decor {
+        display: none;
+    }
+
+    .work__media {
+        display: none;
+    }
+
+    /* Product */
+    .card__decor {
+        display: none;
+    }
+
+    .product__card {
+        padding: 16px;
+    }
+
+    .product .card__top,
+    .product-card__body {
+        transform: scale(0.9);
+    }
+    /* Features */
+    .features .row > [class*="col-"] {
+        flex-shrink: 1;
+    }
+    .features__media {
+        display: none;
+    }
+
+    .features-decor__inner {
+        display: none;
+    }
+
+    /* Comment */
+    .comment__chat-box {
+        margin: 0 5px;
+    }
+
+    /* Blog */
+    .blog__btn {
+        margin-top: 30px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* App */
+    .app__inner {
+        padding: 50px 20px;
+    }
+    .app__item {
+        max-width: 165px;
+    }
+
+    .app__body {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__row,
+    .footer__form {
+        flex-wrap: wrap;
+    }
+
+    .footer__btn {
+        margin-left: 0;
+    }
+}
